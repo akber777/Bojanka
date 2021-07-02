@@ -1,0 +1,69 @@
+.relatedProduct {
+  a {
+    color: #253b70;
+  }
+
+  &__sliderBox {
+    &:hover {
+      .relatedProduct__imgBox {
+        img {
+          transform: scale(1.1);
+          transition: all 0.2s;
+        }
+      }
+
+      .relatedProduct__infoBox {
+        transition: all 0.2s;
+        background-color: #253b70;
+
+        h4 {
+          color: #fff;
+        }
+
+        p {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  &__imgBox {
+    overflow: hidden;
+    height: 350px;
+
+    @media (max-width: 765px) {
+      height: 224px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      transition: all 0.2s;
+    }
+  }
+
+  &__infoBox {
+    display: -webkit-box;
+    line-height: 25px;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    padding: 16px 20px;
+    background-color: #f8f8f8;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    height: 157px;
+    overflow: hidden;
+
+    h4 {
+      text-align: center;
+      color: #ff5603;
+      word-break: break-all;
+      line-height: 34px;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+}

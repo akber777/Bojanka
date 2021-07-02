@@ -1,0 +1,226 @@
+body {
+  padding: 0;
+}
+
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none !important;
+  font-family: "Hobo Std" !important;
+}
+
+@media (max-width: 722px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 745px) {
+  .container_header {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1300px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1260px;
+  }
+}
+
+@media (min-width: 1458px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1400px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1460px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1650px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1798px;
+  }
+}
+
+@font-face {
+  font-family: "Hobo Std";
+  src: url("../../fonts/HoboStd.eot");
+  src: url("../../fonts/HoboStd.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/HoboStd.woff2") format("woff2"),
+    url("../../fonts/HoboStd.woff") format("woff"),
+    url("../../fonts/HoboStd.ttf") format("truetype"),
+    url("../../fonts/HoboStd.svg#HoboStd") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Arial Rounded MT";
+  src: url("../../fonts/ArialRoundedMTBold.eot");
+  src: url("../../fonts/ArialRoundedMTBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/ArialRoundedMTBold.woff2") format("woff2"),
+    url("../../fonts/ArialRoundedMTBold.ttf") format("truetype"),
+    url("../../fonts/ArialRoundedMTBold.svg#ArialRoundedMTBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+p,
+span {
+  font-family: "Arial Rounded MT" !important;
+}
+
+#map {
+  width: 100%;
+  height: 500px;
+
+  .gm-style .gm-style-iw-c {
+    width: 18%;
+    max-width: unset !important;
+
+    @media (max-width: 1838px) {
+      width: 15%;
+    }
+
+    @media (max-width: 1650px) {
+      width: 11%;
+    }
+
+    @media (max-width: 992px) {
+      width: 500px;
+    }
+
+    @media (max-width: 575px) {
+      width: 323px;
+    }
+  }
+
+  .mapWrapper {
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    > img {
+      @media (max-width: 992px) {
+        margin-bottom: 25px;
+      }
+    }
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
+
+    .mapWrapperRIght {
+      margin-left: 20px;
+
+      p {
+        color: #253b70;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 992px) {
+          text-align: center;
+          justify-content: center;
+          font-size: 16px;
+        }
+
+        a {
+          color: #253b70;
+          font-size: 16px;
+          @media (max-width: 992px) {
+            text-align: center;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .gm-ui-hover-effect {
+    top: 2px !important;
+    right: 17px !important;
+    width: 49px !important;
+    height: 51px !important;
+
+    @media (max-width: 575px) {
+      top: 2px !important;
+      right: 23px !important;
+      width: 34px !important;
+      height: 34px !important;
+    }
+
+    img {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+
+  #getDirection {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    color: #ff5603;
+    font-size: 20px;
+    margin-right: 15px;
+
+    @media (max-width: 992px) {
+      position: relative;
+      right: 0;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+    img {
+      @media (max-width: 992px) {
+        width: 22px;
+      }
+    }
+  }
+}
+
+.openMobMenu {
+  transform: translate(0) !important;
+  transition: all 0.2s;
+}

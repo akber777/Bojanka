@@ -1,0 +1,25 @@
+.sliderLand {
+  &__items {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 992px) {
+      margin-bottom: 80px;
+    }
+
+    img {
+      @media (max-width: 992px) {
+        height: 90px !important;
+        object-fit: contain !important;
+      }
+
+      &:first-child {
+        margin-bottom: 95px;
+      }
+
+      &:last-child {
+        height: 158px;
+      }
+    }
+  }
+}

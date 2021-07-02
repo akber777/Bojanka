@@ -1,0 +1,86 @@
+@@include('./template/header.html')
+<section class="home__slider">
+  <img class="home__layoutImg" src="./img/layerSlider.png" alt="" />
+  <div class="container">
+    <div class="splide homeSlider">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <a href="#">
+              <img src="./img/book1.png" alt="" />
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a href="#">
+              <img src="./img/book1.png" alt="" />
+            </a>
+          </li>
+          <li class="splide__slide">
+            <a href="#">
+              <img src="./img/book1.png" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="home__blogBox">
+  <h1 class="star__box">Izaberi svoju bojanku</h1>
+  <div class="home__blogBox--flex">
+    <div class="container">
+      @@include('./template/blogBox.html') @@include('./template/blogBox.html')
+      @@include('./template/blogBox.html') @@include('./template/blogBox.html')
+      @@include('./template/blogBox.html')
+    </div>
+  </div>
+</section>
+<section class="sliderLand">
+  <div class="container">
+    <h1 class="star__box">Gdje kupiti</h1>
+    <div class="splide sliderLand__slider">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div class="sliderLand__items">
+              <img src="./img/land1.png" alt="" />
+              <img src="./img/land2.png" alt="" />
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="sliderLand__items">
+              <img src="./img/land3.png" alt="" />
+              <img src="./img/land5.png" alt="" />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<div id="map"></div>
+<div class="instagram">
+  <h1 class="star__box">Pratite nas na Instagramu</h1>
+  <div class="container">
+    <div class="d-flex align-items-center">
+      <div class="instagram__sliderBox">
+        <div class="splide instagramSLider">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <a href="#">
+                  <img src="./img/instagram1.png" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="instagram__imageBox">
+        <img src="./img/iconInsta.png" alt="" />
+        <a href="#">@crnogorskabojanka</a>
+      </div>
+    </div>
+  </div>
+</div>
+@@include('./template/footer.html')
